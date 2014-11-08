@@ -14,3 +14,4 @@ wp-content/wp-cache-config.php
 /*.sublime-project
 /*.sublime-workspace
 /working_wp/backup
+/working_wp/sftp-config.json
