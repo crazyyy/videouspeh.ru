@@ -548,3 +548,10 @@ body.videogallery .page-title {
     box-shadow: none; }
     .widget_nav_menu .sub-menu a:after {
       display: none; }
+.img10073 {
+  width: 100px !important;
+  height: 73px !important;
+}
+article a {
+  color: #000;
+}
