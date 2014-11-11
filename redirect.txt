@@ -11,3 +11,5 @@ http://videouspeh.ru/videogallery/lovestory/123	http://new.videouspeh.ru/videoga
 http://videouspeh.ru/videogallery/invitation/109	http://new.videouspeh.ru/videogallery/invitation/pozdravlenie-s-dnem-rozhdeniya
 http://videouspeh.ru/videogallery/invitation/62	http://new.videouspeh.ru/videogallery/invitation/novogodnij-syurpriz
 http://videouspeh.ru/videogallery/invitation/100	http://new.videouspeh.ru/videogallery/invitation/shutochnoe-pozdravlenie-na-svadbu
+http://videouspeh.ru/videogallery/presentation/94	http://new.videouspeh.ru/videogallery/presentation/videoprezentaciya-dizajn-studii-maskarad
+http://videouspeh.ru/videogallery/presentation/61	http://new.videouspeh.ru/videogallery/presentation/video-otchet-prezentaciya-zhurnala
