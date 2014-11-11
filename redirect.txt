@@ -14,3 +14,5 @@ http://videouspeh.ru/videogallery/invitation/100	http://new.videouspeh.ru/videog
 http://videouspeh.ru/videogallery/presentation/94	http://new.videouspeh.ru/videogallery/presentation/videoprezentaciya-dizajn-studii-maskarad
 http://videouspeh.ru/videogallery/presentation/61	http://new.videouspeh.ru/videogallery/presentation/video-otchet-prezentaciya-zhurnala
 http://videouspeh.ru/videogallery/presentation/120	http://new.videouspeh.ru/videogallery/presentation/videootchet-o-sportivnom-meropriyatii
+http://videouspeh.ru/videogallery/clips/79	http://new.videouspeh.ru/videogallery/clips/fashion-night-tancevalnoe-shou
+http://videouspeh.ru/videogallery/clips/121	http://new.videouspeh.ru/videogallery/clips/parodiya-na-boevik-son-svadebnogo-operatora
