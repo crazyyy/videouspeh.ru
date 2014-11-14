@@ -8,6 +8,7 @@ class AIOWPSecurity_Backup
     function __construct() 
     {
         add_action('aiowps_perform_scheduled_backup_tasks', array(&$this, 'aiowps_scheduled_backup_handler'));
+        add_action('aiowps_perform_db_cleanup_tasks', array(&$this, 'aiowps_scheduled_db_cleanup_handler'));
     }
     
     /**
@@ -268,5 +269,20 @@ class AIOWPSecurity_Backup
                 $aio_wp_security->configs->save_config();
             }
         }
+    }
+    
+
+    function aiowps_scheduled_db_cleanup_handler()
+    {
+        global $aio_wp_security;
+
+        $aio_wp_security->debug_logger->log_debug_cron("DB Cleanup - checking if a cleanup needs to be done now...");
+        //Check the events table because this can grow quite large especially when 404 events are being logged
+        $events_table_name = AIOWPSEC_TBL_EVENTS;
+        $max_rows_event_table = '5000'; //Keep a max of 5000 rows in the events table
+        $max_rows_event_table = apply_filters( 'aiowps_max_rows_event_table', $max_rows_event_table );
+        AIOWPSecurity_Utility::cleanup_table($events_table_name, $max_rows_event_table);
+        
+        //Keep adding other DB cleanup tasks as they arise...
     }
 }

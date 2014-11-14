@@ -1,10 +1,10 @@
 === All In One WP Security & Firewall ===
-Contributors: Tips and Tricks HQ, wpsolutions, Peter Petreski, Ruhul Amin, samuelaguilera
+Contributors: Tips and Tricks HQ, wpsolutions, Peter Petreski, Ruhul Amin, mbrsolution, samuelaguilera
 Donate link: https://www.tipsandtricks-hq.com
 Tags: security, secure, Anti Virus, antivirus, ban, ban hacker, virus, firewall, firewall security, login, lockdown, htaccess, hack, malware, vulnerability, protect, protection, phishing, database, backup, plugin, sql injection, ssl, restrict, login captcha, bot, hotlink, 404 detection, admin, rename, all in one, scan, scanner, iframe,
 Requires at least: 3.5
 Tested up to: 4.0
-Stable tag: 3.8.3
+Stable tag: 3.8.6
 License: GPLv3
 
 A comprehensive, user-friendly, all in one WordPress security and firewall plugin for your site.
@@ -135,7 +135,20 @@ or malicious bots who do not have a special cookie in their browser. You (the si
 * Github repository - https://github.com/Arsenal21/all-in-one-wordpress-security
 
 = Translations =
-* All In One WP Security plugin can be translated to any language.
+* All In One WP Security plugin can be translated to any language. 
+
+Currently available translations:
+
+- English
+- German
+- Spanish
+- French
+- Hungarian
+- Italian
+- Swedish
+- Russian
+- Chinese
+- Portuguese (Brazil)
 
 Visit the [WordPress Security Plugin](https://www.tipsandtricks-hq.com/wordpress-security-and-firewall-plugin) page for more details.
 
@@ -163,6 +176,24 @@ https://www.tipsandtricks-hq.com/wordpress-security-and-firewall-plugin
 None
 
 == Changelog ==
+
+= 3.8.6 =
+- DB cleanup cron event bug fixed.
+- Added Swedish language translation. The translation was submitted by Tor-Björn Fjellner.
+- Updated the Russian language translation file. Update submitted by Tor-Björn Fjellner.
+- The events table will automatically be cleaned up so it only keeps the last 5000 entries. You can override it using a filter (if you wanted to).
+
+= 3.8.5 =
+- Added functionality to prevent the aiowps_events table from getting too large.
+- Added file change scan summary inside the alert email.
+- Fixed the unlock feature so that it works correctly when the Rename Login Page feature is active.
+- Added a check in the list logged in users file to prevent error when get_transient returns false.
+
+= 3.8.4 = 
+- Updated POT language file.
+- Tweaked the function which retrieves the IP address to handle cases where traffic is coming from cloudflare
+- The MySQL database will not be forced anymore at the time of creating the table. It also reads the characters set value from the system first.
+- Applied fixes to prevent remotely exploitable vulnerabilities.
 
 = 3.8.3 = 
 - Modified "Pingback Protection" .htaccess rules to prevent xmlrpc login attacks and to be compatible with more servers.

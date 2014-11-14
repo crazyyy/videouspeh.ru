@@ -342,7 +342,7 @@ class AIOWPSecurity_Filescan_Menu extends AIOWPSecurity_Admin_Menu
             <?php
             echo '<h2>'.__('What is Malware?', 'aiowpsecurity').'</h2>';
             echo '<p>'.__('The word Malware stands for Malicious Software. It can consist of things like trojan horses, adware, worms, spyware and any other undesirable code which a hacker will try to inject into your website.', 'aiowpsecurity').'</p>'.
-            '<p>'.__('Often when malware code has been inserted into your site you will normally not notice anything out of the ordinary based on appearances, but it can have a dramatic effect on your site’s search ranking.', 'aiowpsecurity').'</p>'.
+            '<p>'.__('Often when malware code has been inserted into your site you will normally not notice anything out of the ordinary based on appearances, but it can have a dramatic effect on your site\'s search ranking.', 'aiowpsecurity').'</p>'.
             '<p>'.__('This is because the bots and spiders from search engines such as Google have the capability to detect malware when they are indexing the pages on your site, and consequently they can blacklist your website which will in turn affect your search rankings.', 'aiowpsecurity').'</p>';
 
             $site_scanners_link = '<a href="http://www.site-scanners.com" target="_blank">CLICK HERE</a>';
@@ -442,19 +442,9 @@ class AIOWPSecurity_Filescan_Menu extends AIOWPSecurity_Admin_Menu
      */
     function display_last_scan_results()
     {
-        global $wpdb, $aio_wp_security;
-        //Let's get the results array from the DB
-        $query = "SELECT * FROM ".AIOWPSEC_TBL_GLOBAL_META_DATA." WHERE meta_key1='file_change_detection'";
-        $scan_db_data = $wpdb->get_row($query, ARRAY_A);
-        if ($scan_db_data === NULL)
+        $scan_results_unserialized = AIOWPSecurity_Scan::get_file_change_data();
+        if (!$scan_results_unserialized)
         {
-            $aio_wp_security->debug_logger->log_debug("display_last_scan_results() - DB query for scan results data from global meta table returned NULL!",4);
-            return FALSE;
-        }
-        $date_last_scan = $scan_db_data['date_time'];
-        $scan_results_unserialized = maybe_unserialize($scan_db_data['meta_value5']);
-        if (empty($scan_results_unserialized['files_added']) && empty($scan_results_unserialized['files_removed']) && empty($scan_results_unserialized['files_changed'])){
-            //No file change detected
             return FALSE;
         }
         ?>

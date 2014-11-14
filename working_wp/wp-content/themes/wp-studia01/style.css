@@ -1,24 +1,16 @@
+@import url('css/normalize.min.css');
 /*
-Theme Name:   WP Видеостудия успех
+Theme Name:   WP Видеостудия Успех
 Theme URI:    https://github.com/crazyyy/wp-easy
-Description:  Приветствую. <br />Тема создана для удобной интеграции шаблонов в WordPress, поддерживает все современыне фишки, минимизированная.<br />Если вам нужна интеграция вашего шаблона на WP, верстка или внести правки - обращайтесь в поддержку - http://saitobaza.ru/, icq 633-308-800 
-Version:    14-02-12
-Author:     crazyyy and others
+Description:   Приветствую. <br />Тема создана для удобной интеграции шаблонов в WordPress, поддерживает все современыне фишки, минимизированная.<br />Если вам нужна интеграция вашего шаблона на WP, верстка или внести правки - обращайтесь в поддержку - http://saitobaza.ru/, icq 633-308-800 
+Version:      09-11-14
+Author:       crazyyy and others
 Author URI:   http://saitobaza.ru/
-Tags:       HTML5, CSS3
-
-License:  MIT
+Tags:         HTML5, CSS3
+License:      MIT
 License URI:  http://opensource.org/licenses/mit-license.php
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
   border: 0;
@@ -26,72 +18,63 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-  list-style-type: none;
-}
-@import url('css/normalize.min.css');
+  list-style-type: none; }
 
 html {
-  height: 100%;
-}
+  height: 100%; }
+
 .chromeframe {
-    margin: 0 0 5px;
-    padding: 5px 0;
-    background: #ccc;
-    color: #000;
-}
+  margin: 0 0 5px;
+  padding: 5px 0;
+  background: #ccc;
+  color: #000; }
+
 body {
   width: 100%;
   height: 100%;
   font-size: 14px;
   line-height: 1.5;
-  font-family: 'PT Sans', sans-serif;
-}
+  font-family: 'PT Sans', sans-serif; }
+
 a {
   outline: none;
   color: blue;
   text-decoration: underline;
   -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-}
-a:hover {
-  text-decoration: none;
-}
-
-a.prev {
-	display: inline;
-	color: #000000;
-	text-decoration: none;
-}
+  transition: all 1s; }
+  a:hover {
+    text-decoration: none; }
+  a.prev {
+    display: inline;
+    color: #000000;
+    text-decoration: none; }
 
 p {
-  margin: 0 0 18px;
-}
+  margin: 0 0 18px; }
+
 img {
   border: none;
   vertical-align: middle;
-  margin:  5px 5px 5px 0;
-}
+  margin: 5px 5px 5px 0; }
+
 input {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
+
 fieldset {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
 textarea {
-    resize: vertical;
-}
+  resize: vertical; }
+
 #wrapper {
   margin: 0 auto;
   min-height: 100%;
   width: 1100px;
   height: auto !important;
-  height: 100%;
-}
+  height: 100%; }
+
 .stitle {
   font-size: 20px;
   font-weight: bold;
@@ -125,6 +108,17 @@ header {
   background-image: url(img/bg/header.jpg);
   background-repeat: no-repeat;
   background-position: center top; }
+  header .contact {
+    position: absolute;
+    top: 5px;
+    left: 270px;
+    font-size: 18px;
+    z-index: 5; }
+    header .contact span {
+      color: red; }
+    header .contact a {
+      color: #000;
+      text-decoration: none; }
 
 .backhead {
   z-index: -50;
@@ -244,6 +238,12 @@ h2.title, .inner-title, .ctitle {
 
 .looper {
   margin-bottom: 20px; }
+  .looper .looper-title {
+    width: 100%;
+    float: left;
+    background-color: #f4f4f4;
+    padding: 5px;
+    height: auto !important; }
   .looper .feature-img {
     display: block;
     width: 300px;
@@ -251,9 +251,6 @@ h2.title, .inner-title, .ctitle {
     border: 5px solid #f6f6f6;
     margin: 0 10px 0 0;
     -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
     transition: all 1s; }
     .looper .feature-img:hover {
       border-color: #000; }
@@ -336,6 +333,9 @@ span.date {
   font-size: 12px;
   color: #ccc; }
 
+.cat-title {
+  display: none; }
+
 /* Footer
 -----------------------------------------------------------------------------*/
 footer {
@@ -349,6 +349,14 @@ footer {
   width: 1100px;
   height: 100%;
   text-align: center; }
+  .mainfooter p {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    padding: 7px 0;
+    background-color: #000;
+    color: #fff; }
 
 /* wordpress default image align
 -----------------------------------------------------------------------------*/
@@ -367,8 +375,6 @@ footer {
   margin: 10px;
   padding-top: 4px;
   border: 1px solid #ddd;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   background-color: #f3f3f3;
   text-align: center;
@@ -449,8 +455,8 @@ footer {
    ========================================================================== */
 @media print {
   /*
-     * Don't show links for images, or javascript/internal links
-     */
+       * Don't show links for images, or javascript/internal links
+       */
   * {
     background: transparent !important;
     box-shadow: none !important;
@@ -544,14 +550,35 @@ body.videogallery .page-title {
     font-weight: normal;
     padding: 2px 0 2px 32px;
     width: 292px;
-    -webkit-box-shadow: none;
     box-shadow: none; }
     .widget_nav_menu .sub-menu a:after {
       display: none; }
+
 .img10073 {
   width: 100px !important;
-  height: 73px !important;
-}
+  height: 73px !important; }
+
 article a {
-  color: #000;
-}
+  color: #000; }
+article ul, article ol {
+  margin: 0 10px 10px;
+  padding: 0 0 0 20px; }
+article ol {
+  list-style-type: decimal; }
+article ul, article li {
+  list-style-type: disc !important;
+  list-style-position: outside; }
+article iframe {
+  width: 100% !important; }
+article img {
+  max-width: 100%; }
+
+.preview5 {
+  width: 100%; }
+  .preview5 td {
+    text-align: center; }
+    .preview5 td img {
+      max-width: 80%; }
+    .preview5 td h6 {
+      font-weight: normal;
+      text-align: center; }

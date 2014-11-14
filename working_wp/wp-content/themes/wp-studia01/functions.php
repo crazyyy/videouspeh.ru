@@ -5,6 +5,9 @@
  *  Custom functions, support, custom post types and more.
  */
 
+include_once('acf/acf.php');
+include_once('acfr/acf-repeater.php');
+
 //  Enable styles for WP admin panel
 //  RU: Подключение собственных шрифтов и скриптов для админки
 function wpeAdminThemeStyle() {
@@ -712,6 +715,8 @@ function dimox_breadcrumbs() {
 	}
 } // end dimox_breadcrumbs()
 
+
+
 /*
 Plugin Name: Top Level Categories
 Plugin URI: http://fortes.com/projects/wordpress/top-level-cats/
@@ -722,6 +727,8 @@ Author URI: http://fortes.com/
 */
 
 // In case we're running standalone, for some odd reason
+
+/*
 if (function_exists('add_action'))
 {
 	register_activation_hook(__FILE__, 'top_level_cats_activate');
@@ -799,4 +806,5 @@ function top_level_cats_remove_cat_base($link)
 	return preg_replace('|' . $category_base . '|', '', $link, 1);
 }
 
+*/
 ?>
