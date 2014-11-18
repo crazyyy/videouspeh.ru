@@ -1,6 +1,6 @@
 @import url('css/normalize.min.css');
 /*
-Theme Name:   WP Видеостудия Успех
+Theme Name:   WP Видеостудия Успех v0.2
 Theme URI:    https://github.com/crazyyy/wp-easy
 Description:   Приветствую. <br />Тема создана для удобной интеграции шаблонов в WordPress, поддерживает все современыне фишки, минимизированная.<br />Если вам нужна интеграция вашего шаблона на WP, верстка или внести правки - обращайтесь в поддержку - http://saitobaza.ru/, icq 633-308-800 
 Version:      09-11-14
@@ -111,7 +111,8 @@ header {
   header .contact {
     position: absolute;
     top: 5px;
-    left: 270px;
+    width: 270px;
+    right: 30px;
     font-size: 18px;
     z-index: 5; }
     header .contact span {
@@ -550,8 +551,21 @@ body.videogallery .page-title {
     font-weight: normal;
     padding: 2px 0 2px 32px;
     width: 292px;
-    box-shadow: none; }
+    box-shadow: none;
+    position: relative;
+    font-weight: bold; }
     .widget_nav_menu .sub-menu a:after {
+      display: none; }
+    .widget_nav_menu .sub-menu a:before {
+      content: "—";
+      position: absolute;
+      top: 2px;
+      left: 15px;
+      color: red; }
+  .widget_nav_menu .sub-menu .current-menu-item a {
+    font-weight: normal;
+    padding: 2px 0 2px 50px; }
+    .widget_nav_menu .sub-menu .current-menu-item a:before {
       display: none; }
 
 .img10073 {
@@ -574,11 +588,42 @@ article img {
   max-width: 100%; }
 
 .preview5 {
-  width: 100%; }
+  width: 100%;
+  table-layout: fixed; }
   .preview5 td {
     text-align: center; }
     .preview5 td img {
+      width: 80%;
       max-width: 80%; }
     .preview5 td h6 {
       font-weight: normal;
       text-align: center; }
+
+.quoterback {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center; }
+  .quoterback img {
+    width: 90%; }
+  .quoterback a {
+    text-decoration: none;
+    color: #000; }
+
+.organizatia .preview5 th a, .konferans .preview5 th a {
+  display: block;
+  width: 80%;
+  padding: 5px 0;
+  margin: 0 auto;
+  background-color: #C0C0C0;
+  text-decoration: none; }
+.organizatia .preview5 td, .konferans .preview5 td {
+  vertical-align: top; }
+.organizatia .preview5 img, .konferans .preview5 img {
+  width: 275px;
+  height: 180px; }
+
+.otcifrovka table {
+  border-collapse: collapse; }
+  .otcifrovka table td {
+    padding: 5px 10px;
+    border: 1px solid #000; }

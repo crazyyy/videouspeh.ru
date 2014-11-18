@@ -1,5 +1,5 @@
 /*
-Theme Name:   WP Видеостудия Успех
+Theme Name:   WP Видеостудия Успех v0.2
 Theme URI:    https://github.com/crazyyy/wp-easy
 Description:   Приветствую. <br />Тема создана для удобной интеграции шаблонов в WordPress, поддерживает все современыне фишки, минимизированная.<br />Если вам нужна интеграция вашего шаблона на WP, верстка или внести правки - обращайтесь в поддержку - http://saitobaza.ru/, icq 633-308-800 
 Version:      09-11-14
@@ -134,7 +134,8 @@ header {
     .contact {
         position: absolute;
         top: 5px;
-        left: 270px;
+        width: 270px;
+        right: 30px;
         font-size: 18px;
         z-index: 5;
         span {
@@ -688,8 +689,26 @@ body.videogallery {
         width: 292px;
         -webkit-box-shadow: none;
         box-shadow: none;
+        position: relative;
+        font-weight: bold;
         &:after {
             display: none;
+        }
+        &:before {
+            content: "—";
+            position: absolute;
+            top: 2px;
+            left: 15px;
+            color: red;
+        }
+    }
+    .current-menu-item {
+        a {
+            font-weight: normal;
+            padding: 2px 0 2px 50px;
+            &:before {
+                display: none;
+            }
         }
     }
 }
@@ -722,14 +741,59 @@ article {
 }
 .preview5 {
   width: 100%;
+  table-layout: fixed;
   td {
     text-align: center;
     img {
-      max-width: 80%;
+        width: 80%;
+        max-width: 80%;
     }
     h6 {
       font-weight: normal;
       text-align: center;
     }
   }
+}
+.quoterback {
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    img {
+        width: 90%;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
+.organizatia,
+.konferans {
+    .preview5 {
+        th {
+            a{
+                display: block;
+                width: 80%;
+                padding: 5px 0;
+                margin: 0 auto;
+                background-color: #C0C0C0;
+                text-decoration: none;
+            }
+        }
+        td {
+            vertical-align: top;
+        }
+        img {
+            width: 275px;
+            height: 180px;
+        }
+    }
+}
+.otcifrovka {
+    table {
+        border-collapse: collapse;
+        td{
+            padding: 5px 10px;
+            border: 1px solid #000;
+        }
+    }
 }
