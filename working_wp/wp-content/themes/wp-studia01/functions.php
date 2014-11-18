@@ -76,18 +76,6 @@ function wpeHeaderScripts()
     }
 }
 
-//  Load conditional scripts
-//  RU: Пример подключения стороннего шрифта дял специфической страницы
-/*
-function wpeConditionalScripts()    {
-    if (is_page('pagenamehere')) {
-        wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery'), '1.0.0'); // Conditional script(s)
-        wp_enqueue_script('scriptname'); // Enqueue it!
-    }
-}
-add_action('wp_print_scripts', 'wpeConditionalScripts'); // Add Conditional Page Scripts
-*/
-
 /*------------------------------------*\
 	Theme Cleanup
     RU: Отключение всякого лишнего
@@ -101,23 +89,6 @@ function my_remove_recent_comments_style() {
         'recent_comments_style'
     ));
 }
-
-
-
-// Load any external files you have here
-
-/*------------------------------------*\
-    Theme Support
-\*------------------------------------*/
-
-
-
-
-
-
-
-
-
 
 if (!isset($content_width))
 {
