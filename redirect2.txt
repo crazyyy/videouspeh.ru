@@ -1,11 +1,11 @@
-http://videouspeh.ru/organizatia/69	http://new.videouspeh.ru/centr-korolevskij-priem
-http://videouspeh.ru/organizatia/87	http://new.videouspeh.ru/agentstvo-po-organizacii-prazdnikov-sergeya-belogolovceva
-http://videouspeh.ru/organizatia/75	http://new.videouspeh.ru/aerodizajn-natalya-rogacheva
-http://videouspeh.ru/organizatia/104	http://new.videouspeh.ru/prazdnichnoe-agentstvo-dva-parusa
-http://videouspeh.ru/organizatia/106	http://new.videouspeh.ru/restoran-vyezdnogo-obsluzhivaniya-best-fud
-http://videouspeh.ru/organizatia/113	http://new.videouspeh.ru/crazy-team-kreativnye-pozdravleniya
-http://videouspeh.ru/konferans/71	http://new.videouspeh.ru/aleksandr-rogachev
-http://videouspeh.ru/konferans/95	http://new.videouspeh.ru/aleksej-mishakov
-http://videouspeh.ru/konferans/96	http://new.videouspeh.ru/aleksandr-belogolovcev
-http://videouspeh.ru/konferans/102	http://new.videouspeh.ru/andrej-svechnikov
-http://videouspeh.ru/konferans/126	
+Redirect 301 /organizatia/69	http://new.videouspeh.ru/centr-korolevskij-priem
+Redirect 301 /organizatia/87	http://new.videouspeh.ru/agentstvo-po-organizacii-prazdnikov-sergeya-belogolovceva
+Redirect 301 /organizatia/75	http://new.videouspeh.ru/aerodizajn-natalya-rogacheva
+Redirect 301 /organizatia/104	http://new.videouspeh.ru/prazdnichnoe-agentstvo-dva-parusa
+Redirect 301 /organizatia/106	http://new.videouspeh.ru/restoran-vyezdnogo-obsluzhivaniya-best-fud
+Redirect 301 /organizatia/113	http://new.videouspeh.ru/crazy-team-kreativnye-pozdravleniya
+Redirect 301 /konferans/71	http://new.videouspeh.ru/aleksandr-rogachev
+Redirect 301 /konferans/95	http://new.videouspeh.ru/aleksej-mishakov
+Redirect 301 /konferans/96	http://new.videouspeh.ru/aleksandr-belogolovcev
+Redirect 301 /konferans/102	http://new.videouspeh.ru/andrej-svechnikov
+Redirect 301 /konferans/126	http://new.videouspeh.ru/sasha-pushkina
