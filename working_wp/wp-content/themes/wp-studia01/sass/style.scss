@@ -743,9 +743,7 @@ body.videogallery {
 .page-id-326 #menu-item-142,
 .page-id-340 #menu-item-135,
 .page-id-342 #menu-item-135,
-.page-id-344 #menu-item-135
-
- {
+.page-id-344 #menu-item-135 {
     a {
         font-weight: normal;
         padding: 2px 0 2px 50px;
@@ -801,7 +799,8 @@ article {
     table-layout: fixed;
     text-align: center;
     img {
-        width: 90%;
+        width: 90% !important;
+        height: 96px !important;
     }
     a {
         text-decoration: none;
