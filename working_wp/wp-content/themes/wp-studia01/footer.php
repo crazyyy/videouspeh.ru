@@ -3,6 +3,7 @@
 <footer class="wrapper">
 <div class="mainfooter">
 	<p class="copy" role="contentinfo">© 2010 - <?php echo date("Y"); ?> Видеостудия «Успех». Видеосъёмка в Москве и Ростове-на-Дону.</p>
+	<a href="http://videouspeh.ru/sitemap.xml" class="sitema">Карта сайта</a>
 	<div class="counters">
 		<!-- begin of Top100 code -->
 		<script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?2449502"></script>

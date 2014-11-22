@@ -134,8 +134,8 @@ header {
     .contact {
         position: absolute;
         top: 5px;
-        width: 270px;
-        right: 30px;
+        /* width: 270px; */
+        right: 10px;
         font-size: 18px;
         z-index: 5;
         span {
@@ -431,6 +431,7 @@ footer {
     width: 1100px;
     height: 100%;
     text-align: center;
+    position: relative;
     p {
         width: 100%;
         box-sizing: border-box;
@@ -439,6 +440,16 @@ footer {
         padding: 7px 0;
         background-color: #000;
         color: #fff;
+    }
+    .sitema {
+        position: absolute;
+        top: 5px;
+        left: 15px;
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -709,6 +720,37 @@ body.videogallery {
             &:before {
                 display: none;
             }
+        }
+    }
+}
+.page-id-228 #menu-item-139,
+.page-id-234 #menu-item-139,
+.page-id-235 #menu-item-139,
+.page-id-236 #menu-item-139,
+.page-id-237 #menu-item-139,
+.page-id-262 #menu-item-138,
+.page-id-268 #menu-item-138,
+.page-id-270 #menu-item-138,
+.page-id-279 #menu-item-137,
+.page-id-287 #menu-item-137,
+.page-id-290 #menu-item-137,
+.page-id-292 #menu-item-137,
+.page-id-294 #menu-item-137,
+.page-id-306 #menu-item-136,
+.page-id-308 #menu-item-136,
+.page-id-311 #menu-item-136,
+.page-id-324 #menu-item-142,
+.page-id-326 #menu-item-142,
+.page-id-340 #menu-item-135,
+.page-id-342 #menu-item-135,
+.page-id-344 #menu-item-135
+
+ {
+    a {
+        font-weight: normal;
+        padding: 2px 0 2px 50px;
+        &:before {
+            display: none;
         }
     }
 }

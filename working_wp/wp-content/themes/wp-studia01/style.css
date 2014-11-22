@@ -111,8 +111,8 @@ header {
   header .contact {
     position: absolute;
     top: 5px;
-    width: 270px;
-    right: 30px;
+    /* width: 270px; */
+    right: 10px;
     font-size: 18px;
     z-index: 5; }
     header .contact span {
@@ -349,7 +349,8 @@ footer {
   margin: 0 auto;
   width: 1100px;
   height: 100%;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   .mainfooter p {
     width: 100%;
     box-sizing: border-box;
@@ -358,6 +359,14 @@ footer {
     padding: 7px 0;
     background-color: #000;
     color: #fff; }
+  .mainfooter .sitema {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    color: #fff;
+    text-decoration: none; }
+    .mainfooter .sitema:hover {
+      text-decoration: underline; }
 
 /* wordpress default image align
 -----------------------------------------------------------------------------*/
@@ -480,7 +489,7 @@ footer {
     border: 1px solid #999;
     page-break-inside: avoid; }
   thead {
-    display: table-header-group;
+    display: table-header-group
     /* h5bp.com/t */ }
   tr {
     page-break-inside: avoid; }
@@ -567,6 +576,12 @@ body.videogallery .page-title {
     padding: 2px 0 2px 50px; }
     .widget_nav_menu .sub-menu .current-menu-item a:before {
       display: none; }
+
+.page-id-228 #menu-item-139 a, .page-id-234 #menu-item-139 a, .page-id-235 #menu-item-139 a, .page-id-236 #menu-item-139 a, .page-id-237 #menu-item-139 a, .page-id-262 #menu-item-138 a, .page-id-268 #menu-item-138 a, .page-id-270 #menu-item-138 a, .page-id-279 #menu-item-137 a, .page-id-287 #menu-item-137 a, .page-id-290 #menu-item-137 a, .page-id-292 #menu-item-137 a, .page-id-294 #menu-item-137 a, .page-id-306 #menu-item-136 a, .page-id-308 #menu-item-136 a, .page-id-311 #menu-item-136 a, .page-id-324 #menu-item-142 a, .page-id-326 #menu-item-142 a, .page-id-340 #menu-item-135 a, .page-id-342 #menu-item-135 a, .page-id-344 #menu-item-135 a {
+  font-weight: normal;
+  padding: 2px 0 2px 50px; }
+  .page-id-228 #menu-item-139 a:before, .page-id-234 #menu-item-139 a:before, .page-id-235 #menu-item-139 a:before, .page-id-236 #menu-item-139 a:before, .page-id-237 #menu-item-139 a:before, .page-id-262 #menu-item-138 a:before, .page-id-268 #menu-item-138 a:before, .page-id-270 #menu-item-138 a:before, .page-id-279 #menu-item-137 a:before, .page-id-287 #menu-item-137 a:before, .page-id-290 #menu-item-137 a:before, .page-id-292 #menu-item-137 a:before, .page-id-294 #menu-item-137 a:before, .page-id-306 #menu-item-136 a:before, .page-id-308 #menu-item-136 a:before, .page-id-311 #menu-item-136 a:before, .page-id-324 #menu-item-142 a:before, .page-id-326 #menu-item-142 a:before, .page-id-340 #menu-item-135 a:before, .page-id-342 #menu-item-135 a:before, .page-id-344 #menu-item-135 a:before {
+    display: none; }
 
 .img10073 {
   width: 100px !important;

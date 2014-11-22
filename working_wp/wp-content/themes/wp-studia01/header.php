@@ -46,6 +46,6 @@
     <nav class="headernav" role="navigation">
         <?php wpeHeadNav(); ?>
     </nav><!-- headernav -->
-    <h6 class="contact">Тел. в <span>Москве</span> <a href="tel:+79031884342">+7 903 188 43 42</a>, <br>филиал в <span>Ростове-на-Дону</span><br> <a href="tel:+79034027905">+7 903 402 79 05</a></h6>
+    <h6 class="contact">Тел. в <span>Москве</span> <a href="tel:+79031884342">+7 903 188 43 42</a>, филиал в <span>Ростове-на-Дону</span> <a href="tel:+79034027905">+7 903 402 79 05</a></h6>
 </header>
 <div class="content-main clearfix">
